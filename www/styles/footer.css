@@ -1,0 +1,21 @@
+footer {
+    background-color: #F2F2F2;
+    padding: 20px;
+}
+
+footer h1 {
+    font-size: 16px;
+    padding-top: 35px;
+}
+
+footer a {
+    line-height: 30px;
+}
+
+@media only screen and (min-width: 768px)
+{
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+}
