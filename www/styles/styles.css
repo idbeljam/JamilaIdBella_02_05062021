@@ -37,3 +37,17 @@ li {
 h1, h2, h3, p {
   margin: 0;
 }
+
+/* utility */
+
+.bleuf {
+    color: #0065FC;
+}
+
+.grisc {
+    color :#c7c7c7;
+}
+
+.pad-sect {
+    padding: 20px;
+}
