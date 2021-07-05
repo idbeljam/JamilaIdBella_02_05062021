@@ -55,3 +55,34 @@ header {
     
 }
 
+@media only screen and (min-width: 1000px)
+{
+    header { 
+        height: 115px;
+        align-items: center;
+        grid-template-columns: auto 22% 11%;
+        grid-template-rows: repeat(1, 1fr) ; 
+        grid-template-areas: 
+        "logo nav signup"
+        ;
+    }
+
+    .signup {
+        padding: 0;
+        padding-right: 20px;
+
+    }
+
+    .imglogo {
+        padding: 0 0 0 20px ;
+    }
+
+    .menu a {
+        border-bottom: none;
+    }
+
+    .menu a:hover {
+        border-bottom: none;
+        border-top: 3px #0065FC solid;
+    }
+}
