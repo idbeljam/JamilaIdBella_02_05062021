@@ -1,0 +1,104 @@
+
+/* first mobile */
+
+header {
+    display: grid;
+    height: 20%;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: repeat(2, 1fr) ; 
+    row-gap: 30px;
+    grid-template-areas: 
+    "logo signup"
+    "nav nav"
+    ;
+  }
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.menu {
+    grid-area: nav;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  
+   
+   
+}
+
+.menu-items {
+    width: 100%;
+    
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 30px;
+    border-bottom: 3px #F2F2F2 solid;
+}
+
+.menu-items:hover {
+    border-bottom: 3px #0065FC solid;
+}
+
+
+.signup {
+    display: grid;
+    grid-area: signup;
+    justify-content: flex-end;
+    padding: 20px 20px 0 0 ;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+.imglogo {
+    height: 55px ;
+    padding: 20px 0 0 20px;
+    
+}
+
+@media only screen and (min-width: 1000px)
+{
+    header { 
+        height: 115px;
+        align-items: center;
+        grid-template-columns: auto 22% 11%;
+        grid-template-rows: repeat(1, 1fr) ; 
+        grid-template-areas: 
+        "logo nav signup"
+        ;
+    }
+
+    .signup {
+        display: grid;
+        align-self: center;
+        padding-right: 20px;
+        padding-top: 0;
+
+    }
+
+    .imglogo {
+        
+        padding: 0 0 0 20px ;
+    }
+
+
+    .menu-items {
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: none;
+    }
+
+    .menu-items:hover {
+        border-bottom: none;
+        border-top: 3px #0065FC solid;
+    }
+}
