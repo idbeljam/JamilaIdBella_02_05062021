@@ -41,6 +41,7 @@ header {
 
 .menu-items:hover {
     border-bottom: 3px #0065FC solid;
+    color: #0065FC;
 }
 
 
@@ -102,6 +103,7 @@ header {
     .menu-items:hover {
         border-bottom: none;
         border-top: 3px #0065FC solid;
+        color: #0065FC;
     }
 
     .signup:hover {
