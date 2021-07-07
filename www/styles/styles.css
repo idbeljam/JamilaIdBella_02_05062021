@@ -114,3 +114,28 @@ h1, h2, h3, p {
   color: white;
   font-size: 16px;
 }
+
+
+@media only screen and (min-width: 768px) {
+
+
+  /* Zone de recherche */
+
+  #iconsearch {
+      display: none;
+
+  }
+
+  #textsearch {
+      display: initial;
+      background-color: #0065FC ;
+      border: none;
+      width: auto;
+      height: 50px;
+      text-align: center;
+      border-radius: 0 15px 15px 0;
+      padding: 0 20px 0 20px;
+      color: white;
+
+  }
+}
