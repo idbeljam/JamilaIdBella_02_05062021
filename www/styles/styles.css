@@ -3,7 +3,6 @@
 @import 'footer.css';
 
 
-
 /* généralités */
 
 html, body {
@@ -65,7 +64,7 @@ h1, h2, h3, p {
   font-size: 22px;
 }
 
-.sect1 p {
+.section-search > p {
   margin-top: 13px;
 
 }
@@ -195,6 +194,89 @@ h1, h2, h3, p {
   border-radius: 20px;
 
 }
+
+/* section hebergement */
+
+  /* aside les plus populaire */
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: #F2F2F2;
+}
+
+.header-aside{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.header-aside h2 {
+  padding-bottom: 15px;
+  font-size: 22px;
+}
+
+.iconpop{
+  font-size: 20px;
+}
+
+    /* card */
+
+    .card {
+      display: grid;
+      grid-template-rows: 40px 40px 40px;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 15px;
+      grid-template-areas:
+      "imgcard legend"
+      "imgcard legend"
+      "imgcard eval"
+      ;
+  
+      background-color: white;
+      border: 4px solid white;
+      border-radius: 25px;
+  
+      
+  }
+  
+  
+  
+  .imgcard {
+      max-width: 100%;
+      object-fit: cover;
+      
+      grid-area: imgcard;
+      height: 100%;
+      width: 100%;
+      border-radius: 25px 0 0 25px ;
+      
+  }
+  
+  .card h3 {
+      padding: 10px 10px 10px 0;
+      font-size: 16px;
+  }
+  
+  .legend {
+      grid-area: legend;
+      
+  }
+  
+  .legend p {
+      font-size: 14px;
+  }
+  
+  .eval {
+      display: flex;
+      grid-area: eval;
+      align-items: flex-end;
+      padding-bottom: 10px;
+  
+      font-size: 12px;
+  }
 
 /* responsive desktop */
 
