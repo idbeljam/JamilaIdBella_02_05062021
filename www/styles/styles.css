@@ -16,6 +16,11 @@ html, body {
     min-height: 100vh;
   }
 
+  body  {
+    display: grid;
+    row-gap: 20px;
+  }
+
   *,*::before, *::after {
     box-sizing: border-box;
   }
@@ -49,6 +54,13 @@ h1, h2, h3, p {
 
 .pad-sect {
     padding: 20px;
+}
+
+/* main */
+
+main {
+  display: grid;
+  row-gap: 20px;  
 }
 
 /* Section search général*/
@@ -199,7 +211,12 @@ h1, h2, h3, p {
 
   /* aside les plus populaire */
 
-aside {
+.section-hebergements {
+  display: flex;
+  flex-direction: column;
+}
+
+aside, .hebergements {
   display: flex;
   flex-direction: column;
   gap: 10px;
