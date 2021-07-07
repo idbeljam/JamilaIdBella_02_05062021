@@ -169,7 +169,7 @@ h1, h2, h3, p {
   
 }
 
-
+/* responsive desktop */
 
 @media only screen and (min-width: 768px) {
 
@@ -192,5 +192,12 @@ h1, h2, h3, p {
       padding: 0 20px 0 20px;
       color: white;
 
+  }
+
+  /* filtres desktop */
+
+    .contenair-filtres {
+      display: flex;
+      align-items: center;
   }
 }
