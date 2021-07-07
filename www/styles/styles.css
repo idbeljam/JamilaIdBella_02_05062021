@@ -54,14 +54,14 @@ h1, h2, h3, p {
 
 /* Section search général*/
 
-.sect1 {
+.section-search {
  
   display: grid;
   gap: 30px;
 
 }
 
-.sect1 h1 {
+.section-search > h1 {
   font-size: 22px;
 }
 
