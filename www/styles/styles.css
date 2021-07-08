@@ -228,9 +228,7 @@ aside, .hebergements {
   background-color: #F2F2F2;
 }
 
-.hebergements {
-  background-color: white;
-}
+
 
 .header-aside{
   display: flex;
@@ -305,6 +303,17 @@ aside, .hebergements {
       font-size: 12px;
   }
 
+/* Hebegements */
+
+.hebergements {
+  background-color: white;
+}
+
+.hebergements > h2 {
+  padding-bottom: 15px;
+  font-size: 22px;
+}
+
    /* card vertical*/
 
    .cardv {
@@ -335,7 +344,7 @@ aside, .hebergements {
 }
 
 .legendv {
-  padding: 0 10px 0 10px;
+  padding: 0 10px 10px 10px;
 }
 
 .cardv h3 {
@@ -353,17 +362,10 @@ aside, .hebergements {
     height: 22px;
 }
 
-.legendv > i {
+.evalv {
 
     font-size: 12px;
-}
-.evalv {
-    display: flex;
-    grid-area: evalv;
-    align-items: flex-end;
-    padding-bottom: 10px;
 
-    font-size: 10px;
 }
 
 
@@ -397,5 +399,44 @@ aside, .hebergements {
     .contenair-filtres {
       display: flex;
       align-items: center;
+  }
+
+  /* section hebergements et populaire */
+
+  .section-hebergements {
+    display: grid;
+    height: 100%;
+    grid-template-columns: auto 30%;
+    column-gap: 40px;
+    grid-template-areas: 
+    "hebergements populaire"
+    ;
+    padding: 20px;
+  }
+
+  .hebergements, aside {
+    border-radius: 20px;
+    padding: 35px;
+    height: 100%;
+  }
+
+  aside {
+    grid-area: populaire;
+    row-gap: 30px;
+  }
+
+  .hebergements {
+    grid-area: hebergements;
+    background-color: #F2F2F2;
+  }
+
+  .hebergements-items {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap : 35px;
+
+    
+   
   }
 }
