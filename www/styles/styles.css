@@ -220,7 +220,7 @@ main {
   flex-direction: column;
 }
 
-aside, .hebergements {
+aside {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -228,7 +228,18 @@ aside, .hebergements {
   background-color: #F2F2F2;
 }
 
+.hebergements{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding: 20px;
+  row-gap: 20px;
+}
 
+.hebergements-items {
+  display: grid;
+  row-gap: 20px;
+}
 
 .header-aside{
   display: flex;
@@ -250,7 +261,7 @@ aside, .hebergements {
     .card {
       display: grid;
       grid-template-rows: 40px 40px 40px;
-      grid-template-columns: 128px 200px;
+      grid-template-columns: 135px auto;
       column-gap: 20px;
       grid-template-areas:
       "imgcard legend"
@@ -260,7 +271,7 @@ aside, .hebergements {
   
       background-color: white;
       border: 4px solid white;
-      border-radius: 25px;
+      border-radius: 20px;
   
       
   }
@@ -274,7 +285,7 @@ aside, .hebergements {
       grid-area: imgcard;
       height: 100%;
       width: 100%;
-      border-radius: 25px 0 0 25px ;
+      border-radius: 20px 0 0 20px ;
       
   }
   
@@ -327,7 +338,7 @@ aside, .hebergements {
 
     background-color: white;
     border: 4px solid white;
-    border-radius: 25px;
+    border-radius: 20px;
 
     
 }
@@ -339,7 +350,7 @@ aside, .hebergements {
     grid-area: imgcardv;
     height: 100%;
     width: 100%;
-    border-radius: 25px 25px 0 0  ;
+    border-radius: 20px 20px 0 0  ;
     
 }
 
@@ -366,6 +377,10 @@ aside, .hebergements {
 
     font-size: 12px;
 
+}
+
+#afficher{
+  display: none;
 }
 
 
@@ -406,7 +421,7 @@ aside, .hebergements {
   .section-hebergements {
     display: grid;
     height: 100%;
-    grid-template-columns: auto 30%;
+    grid-template-columns: auto 35%;
     column-gap: 40px;
     grid-template-areas: 
     "hebergements populaire"
@@ -420,9 +435,13 @@ aside, .hebergements {
     height: 100%;
   }
 
+  .card{
+    grid-template-rows: 50px 50px 50px;
+  }
+
   aside {
     grid-area: populaire;
-    row-gap: 30px;
+    row-gap: 25px;
   }
 
   .hebergements {
@@ -432,11 +451,16 @@ aside, .hebergements {
 
   .hebergements-items {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr;
     grid-template-columns: 1fr 1fr 1fr ;
-    gap : 35px;
-
-    
-   
+    gap : 25px;
   }
+
+  #afficher {
+    display: initial;
+    font-weight: 600;
+    align-self: flex-end;
+    padding-bottom: 10px;
+  }
+
 }
