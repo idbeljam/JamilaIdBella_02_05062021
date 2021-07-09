@@ -228,7 +228,7 @@ aside {
   background-color: #F2F2F2;
 }
 
-.hebergements{
+.hebergements, #activites {
   display: flex;
   height: 100%;
   flex-direction: column;
@@ -383,6 +383,12 @@ aside {
   display: none;
 }
 
+/* section activites */
+
+#activites > .cardv {
+    grid-template-rows: 70% auto;
+    height: 190px;
+}
 
 /* responsive desktop */
 
