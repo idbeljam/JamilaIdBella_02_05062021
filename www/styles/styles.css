@@ -228,7 +228,7 @@ aside {
   background-color: #F2F2F2;
 }
 
-.hebergements, #activites {
+.hebergements, #section-activites {
   display: flex;
   height: 100%;
   flex-direction: column;
@@ -385,9 +385,20 @@ aside {
 
 /* section activites */
 
-#activites > .cardv {
+.activites {
+  display: grid;
+  gap: 20px;
+}
+
+#section-activites > .cardv {
     grid-template-rows: 70% auto;
     height: 190px;
+}
+
+.contenair-column2, .contenair-column4 {
+  display: grid;
+  row-gap: 20px;
+
 }
 
 /* responsive desktop */
@@ -469,4 +480,29 @@ aside {
     padding-bottom: 10px;
   }
 
+  /* section activités */
+
+  .activites {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    height: 450px;
+
+  }
+
+  .activites > .cardv {
+    display: grid;
+    grid-template-rows:  auto 60px;
+    height: 100%;
+  }
+
+  contenair-column2 {
+    display: grid;
+    grid-template-rows: 240px auto ;
+    row-gap: 50px;
+  }
+  
+  
+
+ 
 }
