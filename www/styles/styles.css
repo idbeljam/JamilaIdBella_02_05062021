@@ -57,7 +57,7 @@ h1, h2, h3, p {
 }
 
 .card-shadow {
-  box-shadow: 5px 5px 20px rgb(223, 213, 213);
+  box-shadow: 2px 2px 8px rgb(223, 213, 213);
 }
 
 /* main */
@@ -385,21 +385,40 @@ aside {
 
 /* section activites */
 
-.activites {
+.contenair-activites {
   display: grid;
   gap: 20px;
 }
 
-#section-activites > .cardv {
-    grid-template-rows: 70% auto;
-    height: 190px;
-}
-
-.contenair-column2, .contenair-column4 {
+.card-activites {
   display: grid;
-  row-gap: 20px;
+  height: 190px;
+  grid-template-rows: 135px 60px;
+
+  border-radius: 20px;
 
 }
+
+.img-card-activites {
+  max-width: 100%;
+  object-fit: cover;
+
+  height: 100%;
+  width: 100%;
+  border-radius: 20px 20px 0 0  ;
+}
+
+.legend-activites {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.legend-activites h3 {
+  font-size: 16px;
+}
+
+
 
 /* responsive desktop */
 
@@ -482,26 +501,49 @@ aside {
 
   /* section activités */
 
-  .activites {
-    display: grid;
+  .contenair-activites {
+    grid-template-rows: 450px;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 20px;
-    height: 450px;
-
+    column-gap: 45px;
+   
   }
 
-  .activites > .cardv {
+  .contenair-activites > .card-activites {
     display: grid;
-    grid-template-rows:  auto 60px;
     height: 100%;
+    grid-template-rows: 390px 60px; 
   }
 
-  contenair-column2 {
+  .contenair-column2 {
     display: grid;
-    grid-template-rows: 240px auto ;
-    row-gap: 50px;
+    width: 100%;
+    gap: 40px ;
+    height: 450px;
   }
-  
+    
+  #pomegue {
+    height: 240px;
+    grid-template-rows: 180px 60px;
+  }
+
+  #frioul {
+    height: 170px;
+    grid-template-rows: 110px 60px;
+  }
+
+  #notre-dame {
+    height: 195px;
+    grid-template-rows: 135px 60px;
+  }
+
+  #longchamp {
+    height: 210px;
+    grid-template-rows: 155px 60px;
+  }
+
+
+
+
   
 
  
