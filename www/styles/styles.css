@@ -433,7 +433,7 @@ aside {
 
 /* responsive desktop */
 
-@media only screen and (min-width: 982px) {
+@media only screen and (min-width: 800px) {
 
   .section-search, .section-hebergements, #section-activites {
     padding: 0 50px;
@@ -559,11 +559,12 @@ aside {
     height: 210px;
     grid-template-rows: 155px 60px;
   }
+}
 
 
-
-
+/*VIEW TABLETTE*/
+@media screen and (min-width: 500px) and (max-width: 799px) {
   
 
- 
+
 }
