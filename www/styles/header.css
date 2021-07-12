@@ -73,19 +73,21 @@ header {
         grid-template-areas: 
         "logo nav signup"
         ;
+        padding: 0 50px;
+        
     }
 
     .signup {
         display: grid;
         align-self: center;
-        padding-right: 20px;
+    
         padding-top: 0;
 
     }
 
     .imglogo {
-        
-        padding: 0 0 0 20px ;
+        align-items: flex-start;
+      
     }
 
 

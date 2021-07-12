@@ -8,6 +8,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    
 
     font-family: raleway;
     
@@ -17,8 +18,13 @@ html, body {
   }
 
   body  {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     row-gap: 20px;
+    max-width: 1440px;
+    margin: 0 auto ;
+  
+
   }
 
   *,*::before, *::after {
@@ -64,7 +70,7 @@ h1, h2, h3, p {
 
 main {
   display: grid;
-  row-gap: 20px;  
+  row-gap: 40px;  
 }
 
 /* Section search général*/
@@ -390,6 +396,11 @@ aside {
   gap: 20px;
 }
 
+.contenair-column2 {
+  display: grid;
+  row-gap: 20px;
+}
+
 .card-activites {
   display: grid;
   height: 190px;
@@ -423,6 +434,10 @@ aside {
 /* responsive desktop */
 
 @media only screen and (min-width: 982px) {
+
+  .section-search, .section-hebergements, #section-activites {
+    padding: 0 50px;
+  }
 
 
   /* Zone de recherche */
@@ -462,12 +477,12 @@ aside {
     grid-template-areas: 
     "hebergements populaire"
     ;
-    padding: 20px;
+  
   }
 
   .hebergements, aside {
     border-radius: 20px;
-    padding: 35px;
+    padding: 25px;
     height: 100%;
   }
 
@@ -500,6 +515,10 @@ aside {
   }
 
   /* section activités */
+
+  #section-activites{
+    margin-top: 20px;
+  }
 
   .contenair-activites {
     grid-template-rows: 450px;
