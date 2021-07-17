@@ -3,6 +3,8 @@
 @import 'footer.css';
 
 
+/* partie mobile */
+
 /* généralités */
 
 html, body {
@@ -433,7 +435,7 @@ aside {
 
 
 /* responsive tablette */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width:991px) {
   
   .section-search {
     padding: 0 35px;
@@ -496,7 +498,7 @@ aside {
 
 /* responsive desktop */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
 
   .section-search, .section-hebergements, #section-activites {
     padding: 0 50px;
