@@ -496,10 +496,11 @@ aside {
 
 }
 
-/* responsive desktop */
+/* responsive desktop petit*/
 
 @media only screen and (min-width: 992px) {
 
+  
   .section-search, .section-hebergements, #section-activites {
     padding: 0 50px;
   }
@@ -552,24 +553,17 @@ aside {
   }
 
   .card{
-    grid-template-rows: 50px 50px 50px;
+    grid-template-rows: 56px 56px 56px;
   }
 
   aside {
     grid-area: populaire;
-    row-gap: 25px;
+    row-gap: 50px;
   }
 
   .hebergements {
     grid-area: hebergements;
     background-color: #F2F2F2;
-  }
-
-  .hebergements-items {
-    display: grid;
-    grid-template-rows: 1fr 1fr 0.5fr;
-    grid-template-columns: 1fr 1fr 1fr ;
-    gap : 25px;
   }
 
   #afficher {
@@ -629,6 +623,32 @@ aside {
     height: 210px;
     grid-template-rows: 155px 60px;
   }
+
+.hebergements-items {
+  display: grid;
+  grid-template-rows: 1fr 1fr 0.5fr;
+  grid-template-columns: 1fr 1fr  ;
+  gap : 25px;
+}
 }
 
+/* responsive desktop medium*/
+
+@media only screen and (min-width: 1264px) {
+
+
+
+  .hebergements-items {
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+
+  aside {
+    grid-area: populaire;
+    row-gap: 25px;
+  }
+
+  .card{
+    grid-template-rows: 50px 50px 50px;
+  }
+}
 
