@@ -84,9 +84,8 @@ main {
 
 }
 
-.section-search > h1 {
+.section-search > h2 {
   font-size: 22px;
-  font-weight: 600;
 }
 
 .section-search > p {
