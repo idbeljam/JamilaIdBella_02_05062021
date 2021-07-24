@@ -3,7 +3,7 @@ footer {
     padding: 20px;
 }
 
-footer h1 {
+footer h5 {
     font-size: 16px;
     padding-top: 35px;
 }
@@ -11,6 +11,8 @@ footer h1 {
 footer a {
     line-height: 30px;
 }
+
+
 
 /*VIEW TABLETTE*/
 
